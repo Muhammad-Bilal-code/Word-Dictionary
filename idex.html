@@ -17,38 +17,63 @@
 table {
     margin: 0 auto;
 }
+.res {
+    width: 70%;
+}
+.min, .clr {
+    width: 5%;
+}
+.res-min-clr {
+    width: 14.5%;
+    margin: 0 auto;
+    display: flex;
+    background-color: yellowgreen;
+    justify-content: center;
+}
+.res, .min, .clr {
+    background-color: wheat;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
     </style>
 </head>
 <body>
+    <div class="res-min-clr">
+        <div id = "result" class="res">Result</div>
+        <div id="minus" class="min" onclick="getValue(id)">M</div>
+        <div id="clearAll" class="clr" onclick="getValue(id)">X</div>
+    </div>
     <table class="element-alpha">
         <tr>
-            <td id="0">a</td>
-            <td id="1">b</td>
-            <td id="2">c</td>
-            <td id="3">d</td>
-            <td id="4">e</td>
+            <td id="0" onclick="getValue(id)">a</td>
+            <td id="1" onclick="getValue(id)">b</td>
+            <td id="2" onclick="getValue(id)">c</td>
+            <td id="3" onclick="getValue(id)">d</td>
+            <td id="4" onclick="getValue(id)">e</td>
         </tr>
         <tr>
-            <td id="5">a</td>
-            <td id="6">b</td>
-            <td id="7">c</td>
-            <td id="8">d</td>
-            <td id="9">e</td>
+            <td id="5" onclick="getValue(id)">a</td>
+            <td id="6" onclick="getValue(id)">b</td>
+            <td id="7" onclick="getValue(id)">c</td>
+            <td id="8" onclick="getValue(id)">d</td>
+            <td id="9" onclick="getValue(id)">e</td>
         </tr>
         <tr>
-            <td id="10">a</td>
-            <td id="11">b</td>
-            <td id="12">c</td>
-            <td id="13">d</td>
-            <td id="14">e</td>
+            <td id="10" onclick="getValue(id)">a</td>
+            <td id="11" onclick="getValue(id)">b</td>
+            <td id="12" onclick="getValue(id)">c</td>
+            <td id="13" onclick="getValue(id)">d</td>
+            <td id="14" onclick="getValue(id)">e</td>
         </tr>
-        <table>
-
             <tr>
-                <td colspan="5" onclick="arrangeRandomly()">Arrange Randomly</td>
+                <td colspan="5" id = "put-random-alphabets" onclick="getValue(id)">Put Random Alphabets</td>
             </tr>
-        </table>
+       
     </table>
+
+    <div class="my-team">
+        <span id = "namePlayer" class="name"></span>
+    </div>
 
     <script src="app.js"></script>
 </body>
